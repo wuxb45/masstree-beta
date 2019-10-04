@@ -1,5 +1,5 @@
 #! /bin/sh -e
 
 autoreconf -i
-
-echo "Now, run ./configure."
+CXXFLAGS='-O3' ./configure --disable-assertions --enable-max-key-len=65536 --with-malloc=malloc
+#echo "Now, run ./configure."

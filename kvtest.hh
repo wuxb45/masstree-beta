@@ -35,7 +35,7 @@ inline Json& kvtest_set_time(Json& result, const lcdf::String& base, N n, double
 {
     result.set(base, n);
     if (delta_t > 0)
-        result.set(base + "_per_sec", n / delta_t);
+        result.set(base + "ps", n / delta_t);
     return result;
 }
 

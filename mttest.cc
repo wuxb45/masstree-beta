@@ -63,6 +63,7 @@
 #include "timestamp.hh"
 #include "json.hh"
 #include "kvtest.hh"
+#include "kvtest1.hh"
 #include "kvrandom.hh"
 #include "kvrow.hh"
 #include "kvio.hh"
@@ -605,6 +606,7 @@ MAKE_TESTRUNNER(rscan1q80, kvtest_rscan1(client, 0.8));
 MAKE_TESTRUNNER(splitremove1, kvtest_splitremove1(client));
 MAKE_TESTRUNNER(url, kvtest_url(client));
 MAKE_TESTRUNNER(conflictscan1, kvtest_conflictscan1(client));
+MAKE_TESTRUNNER(xkv, kvtest_xkv(client));
 
 
 enum {
