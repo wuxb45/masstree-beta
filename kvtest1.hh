@@ -207,6 +207,7 @@ void kvtest_del1(C &client, u64 nr)
   template <typename C>
 void kvtest_body1(C &client, u64 nr, u64 pset)
 {
+  __random_seed_u64 = read_tsc() * read_tsc() * read_tsc();
   Str valout;
   double t0 = client.now();
   do {
