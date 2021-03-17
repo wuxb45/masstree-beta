@@ -1,6 +1,6 @@
 #!/bin/bash
 MHOME="/home/wuxb/keys"
-TAG=${1}
+TAG=${1:-1}
 runit ()
 {
   export MTT_NR=${1}
